@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CarePulse - Healthcare & Pharmacy</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="top"><span>🚑 Emergency Ambulance Hotline: 108</span><span>24/7 Doctor Assistance: <u>1800-CARE-NOW</u></span><span>100% Genuine Certified Medicines</span><span>Express 45-Min Pharma Delivery</span></div>
+<header>
+<div class="nav">
+ <a class="logo" onclick="go('home')"><i>✚</i><div>CarePulse<small>HEALTHCARE & PHARMACY</small></div></a>
+ <div class="search"><b>📍 Delhi 110001</b><input placeholder="Search medicines, specialists"><button>🔍</button></div>
+ <nav class="links" id="links">
+  <a data-p="home" onclick="go('home')">Home</a><a data-p="product" onclick="go('product')">Pharmacy</a><a data-p="doctors" onclick="go('doctors')">Doctors</a><a>Lab Tests</a><a data-p="ai" onclick="go('ai')">AI Assistant</a><a data-p="about" onclick="go('about')">About Us</a>
+  <a data-p="cart" onclick="go('cart')">🛒 Cart <span class="badge" id="cnt">3</span></a>
+  <a class="user" onclick="go('login')">👤 Himanshu C.</a>
+ </nav>
+</div>
+<div class="cats"><a>All Products</a><a>Medical Devices</a><a>Diabetes Care</a><a>Immunity & Vitamins</a><a>Cardiac Health</a><a>Prescription Drugs</a><a>Pain Management</a><a class="adm" onclick="go('admin')">⚡ Admin Portal</a></div>
+</header>
+
+<main>
+<!-- 1 HOME -->
+<section class="page" id="home">
+ <div class="hero"><div><span class="pill">✨ 24x7 Express Pharma Delivery & Verified Doctors</span>
+  <h1>Your Health, Our Priority — Digital Healthcare at Your Doorstep</h1>
+  <p>Order 100% genuine medicines, consult certified specialist doctors in minutes, and book diagnostic lab checkups with safe home sample collection.</p>
+  <div class="btns"><button class="btn w" onclick="go('product')">Order Medicines ➔</button><button class="btn t" onclick="go('doctors')">Book Doctor Consult</button><button class="btn t" onclick="go('ai')">AI Symptom Checker</button></div></div>
+  <div class="hbox"><div><b>⚡ Express 45-Min Delivery</b><small>Temperature controlled packaging</small></div><div><b>🛡 100% Verified Medicines</b><small>CDSCO & WHO-GMP compliant batch</small></div><div><b>🧑‍⚕️ 1,200+ Specialist Doctors</b><small>Instant video & in-clinic slots</small></div></div></div>
+ <div class="grid4">
+  <div class="card feat"><span>💊</span><div><b>Online Pharmacy</b><small>Over 15,000+ medicines with 20% off</small></div></div>
+  <div class="card feat"><span>🩺</span><div><b>Doctor Consultation</b><small>Book video or clinic visits</small></div></div>
+  <div class="card feat"><span>🧪</span><div><b>Lab Tests at Home</b><small>Full body checkups with NABL labs</small></div></div>
+  <div class="card feat"><span>🤖</span><div><b>AI Health Assistant</b><small>Smart triage & symptom evaluator</small></div></div>
+ </div>
+ <div class="row"><div><h2>Shop Healthcare by Category</h2><p class="sub">Clinically approved healthcare products & diagnostics</p></div><a style="color:var(--blue);font-weight:700">View All Categories ➔</a></div>
+</section>
+
+<!-- 2 REGISTER -->
+<section class="page" id="register"><div class="two">
+ <div><h1>Create Your Health Account</h1><p class="sub">Join CarePulse to manage prescriptions, doctors, and orders.</p>
+  <label>Full Name</label><input class="f" value="Himanshu Choudhari">
+  <label>Email Address</label><input class="f" type="email" value="himanshu.choudhari@gmail.com">
+  <label>Phone Number</label><input class="f" value="+91 98765 43210">
+  <label>Blood Group & Emergency Vitals</label><select class="f"><option>A Positive (A+)</option><option selected>B Positive (B+)</option><option>O Positive (O+)</option><option>AB Positive (AB+)</option></select>
+  <label>Create Password</label><input class="f" type="password" value="password123456">
+  <button class="btn full" onclick="toast('Account created!');go('login')">Create Account</button></div>
+ <div class="side"><div class="card" style="text-align:center"><div style="font-size:70px">🏥</div><h2 style="color:#075985;margin:14px 0">More Than Just An Online Pharmacy</h2><p class="sub">Get exclusive healthcare deals, personalized dosage reminders, and effortless appointment scheduling.</p>
+  <ul class="ticks" style="text-align:left"><li>Fast & Reliable 45-Min Delivery</li><li>100% Genuine Certified Medicines</li><li>Free Teleconsultation on First Order</li><li>24/7 Dedicated Pharmacist Support</li></ul></div></div>
+</div></section>
+
+<!-- 3 LOGIN -->
+<section class="page" id="login"><div class="two">
+ <div class="side"><div class="card"><b style="color:#075985">✚ CarePulse Health</b><h2 style="color:#075985;margin:12px 0">Welcome Back, Himanshu Choudhari 👋</h2><p class="sub">Log in to access your prescriptions, track active medicine dispatches, and consult your doctors.</p>
+  <div style="font-size:50px;text-align:center">🩺💊📦</div>
+  <div class="row" style="justify-content:space-around;text-align:center;border-top:1px solid var(--bd);margin-top:16px;padding-top:14px"><div><b style="color:var(--blue);font-size:20px">45m</b><br><small>Fast Delivery</small></div><div><b style="color:#16a34a;font-size:20px">100%</b><br><small>Secure Payments</small></div><div><b style="color:#d97706;font-size:20px">24/7</b><br><small>Doctor Care</small></div></div></div></div>
+ <div><h1>Patient Login</h1><p class="sub">Enter your email and password to log in to your account.</p>
+  <label>Email Address</label><input class="f" value="himanshu.choudhari@gmail.com">
+  <label>Password</label><input class="f" type="password" value="12345678">
+  <div class="row" style="margin-top:14px;font-size:14px"><span><input type="checkbox" checked> Remember me</span><a style="color:var(--blue);font-weight:600">Forgot Password?</a></div>
+  <button class="btn full" onclick="toast('Logged in successfully');go('home')">Login to Dashboard</button>
+  <div class="row" style="margin-top:12px"><button class="sb" style="flex:1" onclick="go('home')">Auto Patient Demo</button><button class="sb" style="flex:1" onclick="go('admin')">Auto Pharmacist Admin</button></div>
+  <p style="text-align:center;color:var(--mut);margin:16px 0">— OR —</p><button class="btn o full" style="margin-top:0">Continue with Google</button>
+  <p style="text-align:center;color:var(--mut);margin-top:16px;font-size:14px">Don't have an account? <a style="color:var(--blue);font-weight:700" onclick="go('register')">Register Now</a></p></div>
+</div></section>
+
+<!-- 4 PRODUCT -->
+<section class="page" id="product">
+ <p class="crumb">Home › Pharmacy › Medical Devices › <b style="color:var(--dark)">Omron HEM-7120 Smart Digital Blood Pressure Monitor with IntelliWrap</b></p>
+ <div class="card prod"><div><div class="pimg">🩺</div></div>
+  <div><small style="color:var(--blue);font-weight:700">OMRON HEALTHCARE</small><h1 style="margin:6px 0">Omron HEM-7120 Smart Digital Blood Pressure Monitor with IntelliWrap</h1>
+  <p><span class="tag" style="background:#10b981;color:#fff">★ 4.8</span> (1420 Verified Patient Reviews) &nbsp; <span class="tag">IN STOCK (42 UNITS LEFT)</span></p>
+  <p class="price" style="margin:16px 0">₹1849<s>₹2490</s><span class="tag" style="font-size:15px">26% OFF</span></p>
+  <p class="sub" style="line-height:1.6">The Omron HEM-7120 is a clinically validated, compact blood pressure monitor that operates on the oscillometric principle for precise and effortless blood pressure measurements with irregular heartbeat alert.</p>
+  <div class="chips"><span>✓ Clinically Validated Accuracy (AAMI / ESH)</span><span>✓ IntelliWrap 360° Cuff Accuracy</span><span>✓ One-Touch Automatic Measurement</span><span>✓ Hypertension Indicator & Arrhythmia Sensor</span><span>✓ 3-Year Official Brand Warranty</span></div>
+  <div class="row" style="margin-top:22px;gap:12px"><div class="qty"><button onclick="pq(-1)">-</button><b id="pqty">1</b><button onclick="pq(1)">+</button></div><button class="btn" style="flex:1" onclick="addCart()">🛒 Add to Cart</button><button class="btn g" style="flex:1" onclick="addCart();go('checkout')">⚡ Buy Now</button></div>
+  <div class="card row" style="margin-top:20px;padding:14px;font-size:13px;border-radius:12px"><span><b>🚚 Free Express Shipping</b><br>Orders above ₹500</span><span><b>🔄 7 Days Return Policy</b><br>For sealed items</span><span><b>🛡 100% Genuine Care</b><br>Direct pharmaceutical source</span></div></div></div>
+</section>
+
+<!-- 5 ABOUT -->
+<section class="page" id="about">
+ <div class="about"><span class="pill" style="font-size:12px">ABOUT CAREPULSE HEALTHCARE</span><h1>Your Trusted Online Healthcare & Wellness Partner</h1><p>At CarePulse, we believe exceptional healthcare should be simple, secure, and universally accessible. From doorstep delivery of authentic medicines to on-demand teleconsultations with top hospital doctors, we are pioneering digital health across India.</p>
+ <button class="btn w" onclick="go('product')">Explore Medicine Store</button> <button class="btn t" onclick="go('doctors')">Meet Our Doctors</button></div>
+ <h2>From a Vision to India's Fastest Growing Health Platform</h2><p class="sub">Delivering trust, medical precision, and care every single day</p>
+ <div class="stats"><div class="card"><h2 style="color:var(--blue)">250K+</h2><b>Happy Patients</b><p class="sub">Served across 120+ cities</p></div><div class="card"><h2 style="color:var(--teal)">15,000+</h2><b>Verified Medicines</b><p class="sub">100% genuine batch tracked</p></div><div class="card"><h2 style="color:#f59e0b">4.9 ★</h2><b>Average Patient Rating</b><p class="sub">From 48,000+ reviews</p></div><div class="card"><h2 style="color:#7c3aed">1,200+</h2><b>Certified Doctors</b><p class="sub">Covering 30+ medical specialties</p></div></div>
+</section>
+
+<!-- 6 CART -->
+<section class="page" id="cart"><div class="cart">
+ <div class="card"><div class="row"><div><h2>Your Healthcare Cart</h2><p class="sub" style="margin-bottom:0">Review your selected medicines and diagnostic essentials before checkout</p></div><button class="btn o" onclick="go('product')">+ Continue Shopping</button></div><div id="items" style="margin-top:20px;border-top:1px solid var(--bd)"></div>
+ <div class="row" style="margin-top:20px"><button class="btn o" onclick="cart=[];renderCart()">Clear Cart</button><span class="sub" style="margin:0">Estimated Express Delivery: <b>Today in 45 Mins</b></span></div></div>
+ <div class="card sum"><h3>Order Summary</h3><div><span id="sc">Subtotal</span><span id="st"></span></div><div><span>Delivery Charges</span><span class="free">FREE</span></div><div><span>Medical Handling & Packaging</span><span class="free">FREE</span></div><div class="tot"><span>Total Amount</span><span id="tt"></span></div>
+ <div class="row" style="flex-wrap:nowrap"><input class="f" placeholder="COUPON CODE (E.G. HEALTH20)"><button class="btn" onclick="toast('Coupon applied')">Apply</button></div>
+ <button class="btn full" onclick="go('checkout')">Proceed to Checkout ➔</button><p class="sub" style="text-align:center;margin-top:14px;font-size:13px">🔒 256-Bit SSL Encrypted Checkout<br>UPI · VISA · Mastercard · Mediclaim</p></div>
+</div></section>
+
+<!-- 7 CHECKOUT -->
+<section class="page" id="checkout">
+ <div class="steps"><span class="d">✓ 1. Patient & Address</span><span class="c">② 2. Payment Method</span><span>③ 3. Order Placed</span></div>
+ <div class="cart"><div>
+  <div class="card row"><div><b>📍 Delivery to: Himanshu Choudhari (+91 98765-43210)</b><p class="sub" style="margin:6px 0 0">Flat 402, Royal Palms Heights, Sector 14, New Delhi - 110001</p></div><button class="btn o">Change</button></div>
+  <div class="rx row"><div><b>📄 Doctor's Prescription Attached: Dr_Saxena_Rx_03Oct.pdf</b><br><small>Verified by Registered Pharmacist Dr. Raman Gupta (Reg #DL-8821)</small></div><b>VERIFIED ✓</b></div>
+  <div class="card"><h2>Select Payment Method</h2><p class="sub">Choose your preferred secure payment method to complete order.</p>
+  <div class="pay"><span>💳</span><div><b>Credit / Debit Card</b><small>Pay securely using Visa, MasterCard, RuPay, or American Express</small></div></div>
+  <div class="pay sel"><span>📱</span><div><b>UPI Instant Pay (Fastest)</b><small>Pay using Google Pay, PhonePe, Paytm, BHIM or any UPI App</small></div></div>
+  <div class="pay"><span>🏥</span><div><b>Cashless Mediclaim / Health Insurance</b><small>Star Health, HDFC ERGO, ICICI Lombard & Ayushman Bharat TPA</small></div></div>
+  <div class="pay"><span>🏦</span><div><b>Net Banking</b><small>All major Indian banks supported (HDFC, SBI, ICICI, Axis)</small></div></div>
+  <button class="btn full" onclick="toast('Order placed!');go('track')">Pay & Place Order</button></div></div>
+ <div class="card sum"><h3>Order Summary</h3><div id="cks"></div><div><span>Shipping Charges</span><span class="free">FREE</span></div><div class="tot"><span>Total Amount</span><span id="ctt"></span></div><div class="rx" style="background:#f8fafc;border-color:var(--bd);color:var(--mut);text-align:center;font-size:13px">🔒 100% Secure Payment Guarantee<br>Authorized partner of CDSCO certified pharmacies.</div></div></div>
+</section>
+
+<!-- 8 TRACK -->
+<section class="page" id="track">
+ <p class="crumb">Home › My Orders › <b style="color:var(--dark)">Track Order #CP-948210</b></p>
+ <div class="card row"><div><h2>📦 Order #CP-948210</h2><p class="sub" style="margin:0">Placed on Today, 02:30 PM • Delivery to <b>Sector 14, New Delhi</b></p></div><span class="eta">⚡ Arriving in 35 mins (Express Pharma)</span></div>
+ <div class="cart" style="margin-top:20px"><div class="card"><h3>Prescription & Delivery Timeline</h3><ul class="tl">
+  <li><small>Today, 02:15 PM</small><b>Order Placed & Payment Confirmed</b><p>Payment of ₹2347 received via UPI (Google Pay)</p></li>
+  <li><small>Today, 02:18 PM</small><b>Prescription Verified by Registered Pharmacist</b><p>Reviewed and approved by Dr. Raman Gupta (Reg #DL-8821)</p></li>
+  <li><small>Today, 02:26 PM</small><b>Packed with Cold-Chain Temperature Control</b><p>Sealed in medical tamper-proof packaging (Vitals Box #402)</p></li>
+  <li><small>Today, 02:35 PM</small><b>Dispatched from Apollo-Care Central Hub</b><p>Handed over to verified healthcare courier</p></li>
+  <li class="live"><small>Live Right Now (2.4 km away)</small><b style="color:var(--blue)">Out for Delivery</b><p>Your healthcare rider is on the way on an Electric Vehicle</p></li></ul></div>
+ <div class="card sum"><h3>Items in this Delivery</h3><div><span><b>Omron HEM-7120 BP Monitor</b><br><small>Quantity: 1</small></span><b>₹1849</b></div><div><span><b>Celin 500mg Vitamin C & Zinc</b><br><small>Quantity: 2</small></span><b>₹498</b></div><div><span>Subtotal</span><span>₹2347</span></div><div><span>Express Pharma Delivery</span><span class="free">FREE</span></div><div class="tot"><span>Paid Amount</span><span>₹2347</span></div><button class="btn o full">Download GST Tax Invoice & Rx</button><p class="sub" style="background:#f1f5f9;padding:14px;border-radius:10px;margin-top:16px;font-size:13px"><b>Need Help with this Order?</b><br>Chat with our licensed pharmacist 24/7 or call 1800-CARE-PULSE.</p></div></div>
+</section>
+
+<!-- 9 DOCTORS -->
+<section class="page" id="doctors">
+ <h1>Verified Specialist Doctor Consultations</h1><p class="sub">Book high-definition video consultations or in-clinic appointments with leading hospital specialists</p>
+ <div class="card fil" id="fil"></div><div id="docs"></div>
+</section>
+
+<!-- 10 AI -->
+<section class="page" id="ai"><div class="card" style="max-width:860px;margin:auto">
+ <div style="text-align:center"><span class="tag" style="background:#e0f2fe;color:#0369a1">AI CLINICAL TRIAGE ASSISTANT</span><h1 style="margin:14px 0">Interactive AI Symptom Checker</h1><p class="sub">Select the symptoms you are experiencing to receive an instant medical risk evaluation, triage assessment, and recommended specialist doctor.</p></div>
+ <b>Select Your Primary Symptoms:</b><div class="sym" id="sym"></div>
+ <div class="row" style="gap:20px"><div style="flex:1"><label style="margin-top:0">Symptom Duration:</label><select class="f"><option>Less than 24 hours</option><option selected>1 to 3 days</option><option>4 to 7 days</option><option>More than a week</option></select></div>
+ <div style="flex:1"><label style="margin-top:0">Severity Level:</label><select class="f" id="sev"><option>Mild</option><option selected>Moderate (Discomforting)</option><option>Severe</option></select></div></div>
+ <button class="btn full" onclick="analyze()">🤖 Analyze Symptoms with AI Clinical Triage</button>
+ <div class="res" id="res"></div></div>
+</section>
+
+<!-- 11 ADMIN -->
+<section class="page" id="admin">
+ <div class="row"><div><h1>Pharmacist & Admin Command Portal</h1><p class="sub">Real-time inventory control, prescription verification queue, and live order status management</p></div><button class="btn" onclick="addMed()">+ Add New Medicine</button></div>
+ <div class="grid4 kpi">
+  <div class="card"><h2 style="color:var(--blue)">148</h2><p>Active Orders</p><small>34 out for delivery</small></div>
+  <div class="card"><h2 style="color:#d97706">12</h2><p>Pending Rx Approvals</p><small>Pharmacist review required</small></div>
+  <div class="card"><h2 style="color:#10b981">₹3,42,800</h2><p>Today's Revenue</p><small>+18.4% from yesterday</small></div>
+  <div class="card"><h2 style="color:#ef4444">4</h2><p>Low Stock Alerts</p><small>Requires warehouse restock</small></div></div>
+ <div class="card" style="padding:0;overflow:hidden"><div class="row" style="padding:20px 24px"><h3>Pharmacy Inventory & Pricing</h3><input class="f" style="width:220px" id="q" placeholder="Search SKU or Brand..." oninput="renderInv()"></div>
+ <div style="overflow-x:auto"><table><thead><tr><th>Product Name</th><th>Category</th><th>Selling Price</th><th>MRP</th><th>Stock Units</th><th>Rx Required</th><th>Status</th><th>Action</th></tr></thead><tbody id="inv"></tbody></table></div></div>
+</section>
+</main>
+<div id="toast"></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
